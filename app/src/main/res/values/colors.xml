@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vault_bg">#0E111D</color>
+    <color name="vault_card">#171B2F</color>
+    <color name="vault_primary">#7F7CFD</color>
+
+    <color name="grad_blue_start">#3B82F6</color>
+    <color name="grad_blue_end">#2DD4BF</color>
+
+    <color name="income_mint">#00E5A0</color>
+    <color name="expense_pink">#FF6B8A</color>
+    <color name="warning_orange">#FFB347</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray_text">#8A8D9F</color>
+    <color name="nav_inactive">#4E546A</color>
+
+    <!-- Legacy colors for compatibility if needed -->
+    <color name="primary">#7F7CFD</color>
+    <color name="primary_dark">#0E111D</color>
+    <color name="accent">#7F7CFD</color>
+    <color name="bg_dark">#0E111D</color>
+    <color name="card_bg">#171B2F</color>
+    <color name="purple_accent">#7F7CFD</color>
+    <color name="blue_accent">#3B82F6</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="black">#000000</color>
+</resources>

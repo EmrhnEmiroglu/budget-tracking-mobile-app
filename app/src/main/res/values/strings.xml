@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Bütçe Takip</string>
+    <string name="home">Ana Sayfa</string>
+    <string name="add">Ekle</string>
+    <string name="goals">Hedefler</string>
+    <string name="total_income">Toplam Gelir</string>
+    <string name="total_expense">Toplam Gider</string>
+    <string name="balance">Bakiye</string>
+    <string name="no_transactions">Henüz işlem yok</string>
+    <string name="no_goals">Henüz hedef yok</string>
+    <string name="add_transaction">İşlem Ekle</string>
+    <string name="title">Başlık</string>
+    <string name="amount">Tutar</string>
+    <string name="type">Tür</string>
+    <string name="income">Gelir</string>
+    <string name="expense">Gider</string>
+    <string name="category">Kategori</string>
+    <string name="note">Not (İsteğe bağlı)</string>
+    <string name="save">Kaydet</string>
+    <string name="add_goal">Hedef Ekle</string>
+    <string name="target_amount">Hedef Tutar</string>
+    <string name="current_amount">Mevcut Birikim</string>
+    <string name="filter">Filtrele</string>
+    <string name="delete_confirm">Silmek istediğinize emin misiniz?</string>
+    <string name="add_money">Para Ekle</string>
+    <string name="cancel">İptal</string>
+    <string name="delete">Sil</string>
+    <string name="profile">Profil</string>
+</resources>

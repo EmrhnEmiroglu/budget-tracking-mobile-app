@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vault_bg"
+    android:fillViewport="true">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="TUTAR GİR"
+        android:textColor="@color/gray_text"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="center"
+        android:hint="₺ 0.00"
+        android:inputType="numberDecimal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/nav_inactive"
+        android:textSize="64sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:singleSelection="true"
+        app:selectionRequired="true"
+        app:checkedButton="@+id/btn_expense">
+        <Button
+            android:id="@+id/btn_income"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Gelir"
+            android:textColor="@color/white"
+            app:cornerRadius="16dp"/>
+        <Button
+            android:id="@+id/btn_expense"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_weight="1"
+            android:text="Gider"
+            android:textColor="@color/white"
+            app:cornerRadius="16dp"/>
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <!-- Başlık -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/vault_input_field_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BAŞLIK"
+            android:textColor="@color/gray_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.1"/>
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="İşlem başlığı"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/nav_inactive"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Kategori -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/vault_input_field_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KATEGORİ"
+            android:textColor="@color/gray_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.1"/>
+        <Spinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:theme="@style/Theme.Proje"/>
+    </LinearLayout>
+
+    <!-- Not -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/vault_input_field_bg"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOT (İSTEĞE BAĞLI)"
+            android:textColor="@color/gray_text"
+            android:textSize="10sp"
+            android:letterSpacing="0.1"/>
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="Açıklama ekle"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/nav_inactive"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/vault_primary"
+        android:text="İŞLEMİ KAYDET"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>
+</ScrollView>

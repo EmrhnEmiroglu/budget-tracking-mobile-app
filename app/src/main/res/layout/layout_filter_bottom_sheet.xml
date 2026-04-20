@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_profile_header"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:paddingTop="0dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="#26FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İşlemleri Filtrele"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KATEGORİ"
+        android:textColor="@color/gray_text"
+        android:textSize="11sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="6dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_filter_category"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_spinner"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÜR"
+        android:textColor="@color/gray_text"
+        android:textSize="11sp"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="6dp"/>
+
+    <Spinner
+        android:id="@+id/spinner_filter_type"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/bg_spinner"/>
+
+    <Button
+        android:id="@+id/btn_apply_filter"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Uygula"
+        android:backgroundTint="@color/vault_primary"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp"
+        app:cornerRadius="16dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <Button
+        android:id="@+id/btn_clear_filter"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:text="Filtreyi Temizle"
+        android:textColor="@color/gray_text"
+        style="@style/Widget.Material3.Button.TextButton"/>
+
+</LinearLayout>
